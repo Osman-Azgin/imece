@@ -14,4 +14,10 @@ class Requirement extends Model
     {
         return $this->belongsTo(Warehouse::class);
     }
+
+    // belongsTo inkindDonation
+    public function inkindDonation()
+    {
+        return $this->belongsTo(InkindDonation::class);
+    }
 }
