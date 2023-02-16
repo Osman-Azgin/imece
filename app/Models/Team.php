@@ -46,4 +46,7 @@ class Team extends JetstreamTeam
     public function documents(){
         return $this->hasMany(TeamDocument::class);
     }
+
+
+
 }

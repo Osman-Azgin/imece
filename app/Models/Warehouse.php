@@ -23,4 +23,11 @@ class Warehouse extends Model
     {
         return $this->hasMany(Requirement::class);
     }
+
+    //has Many imeces
+
+    public function imeces()
+    {
+        return $this->hasMany(Imece::class);
+    }
 }
