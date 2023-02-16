@@ -47,6 +47,11 @@ class Team extends JetstreamTeam
         return $this->hasMany(TeamDocument::class);
     }
 
+    // has Many imece
+    public function imeces()
+    {
+        return $this->hasMany(Imece::class);
+    }
 
 
 }
