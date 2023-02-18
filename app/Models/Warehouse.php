@@ -34,6 +34,6 @@ class Warehouse extends Model
     // has one address
     public function address()
     {
-        return $this->hasOne(Address::class);
+        return $this->belongsTo(Address::class);
     }
 }
