@@ -30,4 +30,10 @@ class Warehouse extends Model
     {
         return $this->hasMany(Imece::class);
     }
+
+    // has one address
+    public function address()
+    {
+        return $this->hasOne(Address::class);
+    }
 }
