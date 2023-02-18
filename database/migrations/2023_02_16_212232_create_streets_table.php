@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('streets', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->unsignedBigInteger('neighborhood_id');
+            $table->foreign('neighborhood_id')->references('id')->on('neighborhoods');
             $table->timestamps();
         });
     }
