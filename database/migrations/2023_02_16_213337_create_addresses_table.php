@@ -18,7 +18,6 @@ return new class extends Migration
             $table->foreignId('district_id')->index();
             $table->foreignId('neighborhood_id')->index();
             $table->foreignId('street_id')->index()->nullable();
-            $table->foreignId('village_id')->index()->nullable();
             $table->timestamps();
         });
     }
