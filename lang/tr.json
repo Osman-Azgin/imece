@@ -27,7 +27,7 @@
     "Log in": "Giriş yap",
     "Forgot your password?": "Şifremi unuttum",
     "Email": "E-posta",
-    "You must upload your organization's documents/papers and click \"verify\" to send documents to our team for verification.": "Kuruluşunaza ait belgeleri yükledikten sonra \"Doğrula\" butonuna basınız.Onaylandıktan sonra sisteminiz açılacaktır.(Doğrulama yapılırken yeni dosya ekleyebilirsiniz)",
+    "You must upload your organization's documents/papers and click 'verify' to send documents to our team for verification.": "Kuruluşunaza ait belgeleri yükledikten sonra 'Doğrula' butonuna basınız.Onaylandıktan sonra sisteminiz açılacaktır.(Doğrulama yapılırken yeni dosya ekleyebilirsiniz)",
     "Select file": "Dosya seç",
     "Plesase select file!": "Lütfen dosya seçin",
     "Add": "Ekle",
@@ -65,7 +65,7 @@
     "Use a recovery code": "Yedekleme kodu kullan",
     "Two Factor Authentication": "İki Aşamalı Kimlik Doğrulama",
     "Use an authentication code": "Kimlik doğrulama kodu kullan",
-    "Before continuing, could you verify your email address by clicking on the link we just emailed to you? If you didn\\'t receive the email, we will gladly send you another.": "Devam etmeden önce, size sadece e-posta gönderdiğimiz bağlantıyı tıklayarak e-posta adresinizi doğrulayabilir misiniz? Eğer e-postayı almadıysanız, size başka bir tane göndereceğiz.",
+    "Before continuing, could you verify your email address by clicking on the link we just emailed to you? If you didn't receive the email, we will gladly send you another.": "Devam etmeden önce, size sadece e-posta gönderdiğimiz bağlantıyı tıklayarak e-posta adresinizi doğrulayabilir misiniz? Eğer e-postayı almadıysanız, size başka bir tane göndereceğiz.",
     "A new verification link has been sent to the email address you provided in your profile settings.": "Profil ayarlarınızda belirttiğiniz e-posta adresine yeni bir doğrulama bağlantısı gönderildi.",
     "Resend Verification Email": "Doğrulama E-postası Gönder",
     "Dashboard": "Kontrol Paneli",
@@ -94,22 +94,22 @@
     "Manage All Teams": "Tüm Takımları Yönet",
     "Current requirements": "Mevcut gereksinimler",
     "Previous İmeces": "Önceki İmeceler",
-    "Your organization\\'s imeces": "Kuruluşunuzun imeceleri",
+    "Your organization's imeces": "Kuruluşunuzun imeceleri",
     "No imeces here": "Burada imece yok",
     "Warehouse": "Depo",
     "Select": "Seç",
     "Save": "Kaydet",
     "Manage requirements": "Gereksinimleri yönet",
-    "Your organization\\'s requirements": "Kuruluşunuzun gereksinimleri",
+    "Your organization's requirements": "Kuruluşunuzun gereksinimleri",
     "Add Requirement": "Gereksinim Ekle",
     "No current requirements here": "Burada mevcut gereksinim yok",
     "Old Rquirements": "Eski Gereksinimler",
     "No old requirements here": "Burada eski gereksinimler yok",
     "Organization": "Kuruluş",
-    "Organization\\'s warehouse name": "Kuruluşunuzun depo adı",
+    "Organization's warehouse name": "Kuruluşunuzun depo adı",
     "In-Kind donation type": "Mal bağışı türü",
-    "Organization\\'s warehouse address": "Kuruluşunuzun depo adresi",
-    "Organization\\'s officer": "Kuruluşunuzun yetkilisi",
+    "Organization's warehouse address": "Kuruluşunuzun depo adresi",
+    "Organization's officer": "Kuruluşunuzun yetkilisi",
     "Requirement": "Gereksinim",
     "Create a new requirement": "Yeni bir gereksinim oluştur",
     "Delete Requirement": "Gereksinimi Sil",
@@ -117,8 +117,7 @@
     "Are you sure to delete this requirement?": "Gereksinimi silmek istediğinizden emin misiniz?",
     "Please specify which warehouse will use for requirement satisfy": "Lütfen gereksinimi karşılamak için hangi depoyu kullanacağınızı belirtin",
     "Your organization not verified yet!": "Kuruluşunuz henüz doğrulanmadı!",
-    "Your admin will upload your organization\\'s documents and we will inspect this and activate your system.": "Yöneticiniz kuruluşunuzun belgelerini yükleyecek ve bunları inceleyecek ve sisteminizi etkinleştirecek.",
-    "You must upload your organization\\'s documents/papers and click \"verify\" to send documents to our team for verification.": "Kuruluşunuzun belgelerini yüklemelisiniz ve \"doğrula\"ya tıklayarak belgelerimizi doğrulamak için göndermelisiniz.",
+    "Your admin will upload your organization's documents and we will inspect this and activate your system.": "Yöneticiniz kuruluşunuzun belgelerini yükleyecek ve bunları inceleyecek ve sisteminizi etkinleştirecek.",
     "Submited to verification": "Doğrulama için gönderildi",
     "New warehouse": "Yeni depo",
     "Delete Warehouse": "Depoyu Sil",
@@ -133,7 +132,6 @@
     "Latitude": "Enlem",
     "Longitude": "Boylam",
     "Are you sure to delete this waregouse?": "Depoyu silmek istediğinizden emin misiniz?",
-    "Your organization\\'s warehouses": "Kuruluşunuzun depoları",
     "Delete Account": "Hesabı Sil",
     "Permanently delete your account.": "Hesabınızı kalıcı olarak silin.",
     "Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.": "Hesabınız silindiğinde, tüm kaynaklarınız ve verileriniz kalıcı olarak silinecektir. Hesabınızı silmeden önce, saklamak istediğiniz herhangi bir veri veya bilgiyi indirmeyi unutmayın.",
@@ -149,9 +147,9 @@
     "Finish enabling two factor authentication.": "İki faktörlü kimlik doğrulamasını etkinleştirmeyi tamamlayın.",
     "You have enabled two factor authentication.": "İki faktörlü kimlik doğrulamasını etkinleştirdiniz.",
     "You have not enabled two factor authentication.": "İki faktörlü kimlik doğrulamasını etkinleştirmediniz.",
-    "When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone\\'s Google Authenticator application.": "İki faktörlü kimlik doğrulaması etkinleştirildiğinde, kimlik doğrulaması sırasında güvenli, rastgele bir belirteç istenecektir. Bu belirteci telefonunuzun Google Authenticator uygulamasından alabilirsiniz.",
-    "To finish enabling two factor authentication, scan the following QR code using your phone\\'s authenticator application or enter the setup key and provide the generated OTP code.": "İki faktörlü kimlik doğrulamasını etkinleştirmeyi tamamlamak için, telefonunuzun kimlik doğrulama uygulamasını kullanarak aşağıdaki QR kodunu tarayın veya kurulum anahtarını girin ve oluşturulan OTP kodunu sağlayın.",
-    "Two factor authentication is now enabled. Scan the following QR code using your phone\\'s authenticator application or enter the setup key.": "İki faktörlü kimlik doğrulaması şimdi etkinleştirildi. Telefonunuzun kimlik doğrulama uygulamasını kullanarak aşağıdaki QR kodunu tarayın veya kurulum anahtarını girin.",
+    "When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone's Google Authenticator application.": "İki faktörlü kimlik doğrulaması etkinleştirildiğinde, kimlik doğrulaması sırasında güvenli, rastgele bir belirteç istenecektir. Bu belirteci telefonunuzun Google Authenticator uygulamasından alabilirsiniz.",
+    "To finish enabling two factor authentication, scan the following QR code using your phone's authenticator application or enter the setup key and provide the generated OTP code.": "İki faktörlü kimlik doğrulamasını etkinleştirmeyi tamamlamak için, telefonunuzun kimlik doğrulama uygulamasını kullanarak aşağıdaki QR kodunu tarayın veya kurulum anahtarını girin ve oluşturulan OTP kodunu sağlayın.",
+    "Two factor authentication is now enabled. Scan the following QR code using your phone's authenticator application or enter the setup key.": "İki faktörlü kimlik doğrulaması şimdi etkinleştirildi. Telefonunuzun kimlik doğrulama uygulamasını kullanarak aşağıdaki QR kodunu tarayın veya kurulum anahtarını girin.",
     "Setup Key": "Kurulum Anahtarı",
     "Store these recovery codes in a secure password manager. They can be used to recover access to your account if your two factor authentication device is lost.": "Bu kurtarma kodlarını güvenli bir şifre yöneticisinde saklayın. İki faktörlü kimlik doğrulama cihazınız kaybolursa, hesabınıza erişimi kurtarmak için kullanılabilir.",
     "Enable": "Etkinleştir",
@@ -163,7 +161,7 @@
     "New Password": "Yeni Şifre",
     "Saved": "Kaydedildi",
     "Profile Information": "Profil Bilgileri",
-    "Update your account\\'s profile information and email address.": "Hesabınızın profil bilgilerini ve e-posta adresini güncelleyin.",
+    "Update your account's profile information and email address.": "Hesabınızın profil bilgilerini ve e-posta adresini güncelleyin.",
     "Select A New Photo": "Yeni Bir Fotoğraf Seç",
     "Remove Photo": "Fotoğrafı Kaldır",
     "Your email address is unverified.": "E-posta adresiniz doğrulanmadı.",
@@ -194,25 +192,7 @@
     "Leave": "Ayrıl",
     "Remove Team Member": "Takım Üyesini Kaldır",
     "Are you sure you would like to remove this person from the team?": "Bu kişiyi takımdan kaldırmak istediğinizden emin misiniz?",
-    "The team\\'s name and owner information.": "Takımın adı ve sahibi bilgileri.",
+    "The team's name and owner information.": "Takımın adı ve sahibi bilgileri.",
     "Requirements": "Gereksinimler",
     "Create New Team": "Yeni Takım Oluştur"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
