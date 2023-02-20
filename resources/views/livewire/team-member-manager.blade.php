@@ -20,11 +20,39 @@
                         </div>
                     </div>
 
+                    <!-- Member Name -->
+                    <div class="col-span-6 sm:col-span-4">
+                        <x-label for="name" value="{{ __('Name') }}" />
+                        <x-input id="name" type="text" class="mt-1 block w-full" wire:model.defer="addTeamMemberForm.name" />
+                        <x-input-error for="name" class="mt-2" />
+                    </div>
+
                     <!-- Member Email -->
                     <div class="col-span-6 sm:col-span-4">
                         <x-label for="email" value="{{ __('Email') }}" />
                         <x-input id="email" type="email" class="mt-1 block w-full" wire:model.defer="addTeamMemberForm.email" />
                         <x-input-error for="email" class="mt-2" />
+                    </div>
+
+                    <!-- Member Email -->
+                    <div class="col-span-6 sm:col-span-4">
+                        <x-label for="phone" value="{{ __('Phone') }}" />
+                        <x-input id="phone" type="tel" class="mt-1 block w-full" wire:model.defer="addTeamMemberForm.phone" />
+                        <x-input-error for="phone" class="mt-2" />
+                    </div>
+
+                    <!-- Member Email -->
+                    <div class="col-span-6 sm:col-span-4">
+                        <x-label for="password" value="{{ __('Password') }}" />
+                        <x-input id="password" type="password" class="mt-1 block w-full" wire:model.defer="addTeamMemberForm.password" />
+                        <x-input-error for="password" class="mt-2" />
+                    </div>
+
+                    <!-- Member Email -->
+                    <div class="col-span-6 sm:col-span-4">
+                        <x-label for="confirm_password" value="{{ __('Confirm Password') }}" />
+                        <x-input id="confirm_password" type="password" class="mt-1 block w-full" wire:model.defer="addTeamMemberForm.password_confirmation" />
+                        <x-input-error for="confirm_password" class="mt-2" />
                     </div>
 
                     <!-- Role -->
@@ -36,7 +64,7 @@
                             <div class="relative z-0 mt-1 border border-gray-200 rounded-lg cursor-pointer">
                                 @foreach ($this->roles as $index => $role)
                                     <button type="button" class="relative px-4 py-3 inline-flex w-full rounded-lg focus:z-10 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 {{ $index > 0 ? 'border-t border-gray-200 focus:border-none rounded-t-none' : '' }} {{ ! $loop->last ? 'rounded-b-none' : '' }}"
-                                                    wire:click="$set('addTeamMemberForm.role', '{{ $role->key }}')">
+                                            wire:click="$set('addTeamMemberForm.role', '{{ $role->key }}')">
                                         <div class="{{ isset($addTeamMemberForm['role']) && $addTeamMemberForm['role'] !== $role->key ? 'opacity-50' : '' }}">
                                             <!-- Role Name -->
                                             <div class="flex items-center">
@@ -100,7 +128,7 @@
                                     @if (Gate::check('removeTeamMember', $team))
                                         <!-- Cancel Team Invitation -->
                                         <button class="cursor-pointer ml-6 text-sm text-red-500 focus:outline-none"
-                                                            wire:click="cancelTeamInvitation({{ $invitation->id }})">
+                                                wire:click="cancelTeamInvitation({{ $invitation->id }})">
                                             {{ __('Cancel') }}
                                         </button>
                                     @endif
@@ -151,11 +179,14 @@
 
                                     <!-- Leave Team -->
                                     @if ($this->user->id === $user->id)
-                                        <button class="cursor-pointer ml-6 text-sm text-red-500" wire:click="$toggle('confirmingLeavingTeam')">
-                                            {{ __('Leave') }}
-                                        </button>
+                                    {{--
+                                    <button class="cursor-pointer ml-6 text-sm text-red-500"
+                                            wire:click="$toggle('confirmingLeavingTeam')">
+                                        {{ __('Leave') }}
+                                    </button>
+                                    --}}
 
-                                    <!-- Remove Team Member -->
+                                        <!-- Remove Team Member -->
                                     @elseif (Gate::check('removeTeamMember', $team))
                                         <button class="cursor-pointer ml-6 text-sm text-red-500" wire:click="confirmTeamMemberRemoval('{{ $user->id }}')">
                                             {{ __('Remove') }}
@@ -180,7 +211,7 @@
             <div class="relative z-0 mt-1 border border-gray-200 rounded-lg cursor-pointer">
                 @foreach ($this->roles as $index => $role)
                     <button type="button" class="relative px-4 py-3 inline-flex w-full rounded-lg focus:z-10 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 {{ $index > 0 ? 'border-t border-gray-200 focus:border-none rounded-t-none' : '' }} {{ ! $loop->last ? 'rounded-b-none' : '' }}"
-                                    wire:click="$set('currentRole', '{{ $role->key }}')">
+                            wire:click="$set('currentRole', '{{ $role->key }}')">
                         <div class="{{ $currentRole !== $role->key ? 'opacity-50' : '' }}">
                             <!-- Role Name -->
                             <div class="flex items-center">

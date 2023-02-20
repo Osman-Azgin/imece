@@ -24,6 +24,12 @@ class RemoveTeamMember implements RemovesTeamMembers
         $team->removeUser($teamMember);
 
         TeamMemberRemoved::dispatch($team, $teamMember);
+
+        if (count($user->allTeams()) === 0) {
+            $user->deleteProfilePhoto();
+            $user->tokens->each->delete();
+            $user->delete();
+        }
     }
 
     /**
