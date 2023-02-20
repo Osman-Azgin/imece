@@ -39,7 +39,7 @@
                             </div>
                         @endif
 
-                        <h1 class="font-medium">{{ __('Current Rquirements') }}</h1>
+                        <h1 class="font-medium">{{ __('Current Requirements') }}</h1>
 
                         @if(count($currentRequirements)==0)
                             <h1 class="font-medium text-center">{{ __('No current requirements here') }}</h1>
