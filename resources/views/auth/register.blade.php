@@ -10,7 +10,7 @@
             @csrf
 
             <div class="mt-4">
-                <h2 class="font-medium leading-tight text-4xl mt-0 mb-2 text-blue-600 text-center">{{__('Your Organization')}}</h2>
+                <h2 class="font-medium leading-tight text-xl mt-0 mb-2 text-blue-600 text-center">{{__('Your Organization')}}</h2>
             </div>
 
             <div class="mt-4">
@@ -120,7 +120,7 @@
             </div>
 
             <div class="mt-4">
-                <h2 class="font-medium leading-tight text-4xl mt-0 mb-2 text-blue-600 text-center">{{__('Officer')}}</h2>
+                <h2 class="font-medium leading-tight text-xl mt-0 mb-2 text-blue-600 text-center">{{__('Officer')}}</h2>
             </div>
 
             <div>

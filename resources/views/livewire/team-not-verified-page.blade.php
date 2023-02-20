@@ -8,12 +8,24 @@
 
         @if(!Auth::User()->currentTeam->userHasPermission(Auth::User(),"administration"))
             <p class="mt-6 text-gray-500 leading-relaxed">
-                {{ __('Your admin will upload your organization\'s documents and we will inspect this and activate your system') }}
+                {{ __('Your admin will upload your organization\'s documents and we will inspect this and activate your system.') }}
             </p>
         @else
-            <p class="mt-6 text-gray-500 leading-relaxed">
-                {{ __('You must upload your organization\'s documents/papers and click "verify" to send documents to our team for verification') }}
-            </p>
+            <div class="grid md:grid-cols-8 gap-4 grid-cols-1">
+                <div class="col-span-6">
+                    <p class="mt-6 text-gray-500 leading-relaxed">
+                        {{ __('You must upload your organization\'s documents/papers and click "verify" to send documents to our team for verification.') }}
+                    </p>
+                </div>
+                <div class="col-span-2 text-right">
+                    @if(\Illuminate\Support\Facades\Auth::user()->currentTeam->has_documents)
+                        <x-secondary-button disabled>{{ __("Submited to verification") }}</x-secondary-button>
+                    @else
+                        <x-button wire:click="sendToVerification">{{ __("Submit to verification") }}</x-button>
+                    @endif
+                </div>
+            </div>
+
         @endif
 
     </div>

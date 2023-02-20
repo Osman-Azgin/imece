@@ -20,11 +20,39 @@
                         </div>
                     </div>
 
+                    <!-- Member Name -->
+                    <div class="col-span-6 sm:col-span-4">
+                        <x-label for="name" value="{{ __('Name') }}" />
+                        <x-input id="name" type="text" class="mt-1 block w-full" wire:model.defer="addTeamMemberForm.name" />
+                        <x-input-error for="name" class="mt-2" />
+                    </div>
+
                     <!-- Member Email -->
                     <div class="col-span-6 sm:col-span-4">
                         <x-label for="email" value="{{ __('Email') }}" />
                         <x-input id="email" type="email" class="mt-1 block w-full" wire:model.defer="addTeamMemberForm.email" />
                         <x-input-error for="email" class="mt-2" />
+                    </div>
+
+                    <!-- Member Email -->
+                    <div class="col-span-6 sm:col-span-4">
+                        <x-label for="phone" value="{{ __('Phone') }}" />
+                        <x-input id="phone" type="tel" class="mt-1 block w-full" wire:model.defer="addTeamMemberForm.phone" />
+                        <x-input-error for="phone" class="mt-2" />
+                    </div>
+
+                    <!-- Member Email -->
+                    <div class="col-span-6 sm:col-span-4">
+                        <x-label for="password" value="{{ __('Password') }}" />
+                        <x-input id="password" type="password" class="mt-1 block w-full" wire:model.defer="addTeamMemberForm.password" />
+                        <x-input-error for="password" class="mt-2" />
+                    </div>
+
+                    <!-- Member Email -->
+                    <div class="col-span-6 sm:col-span-4">
+                        <x-label for="confirm_password" value="{{ __('Confirm Password') }}" />
+                        <x-input id="confirm_password" type="password" class="mt-1 block w-full" wire:model.defer="addTeamMemberForm.confirm_password" />
+                        <x-input-error for="confirm_password" class="mt-2" />
                     </div>
 
                     <!-- Role -->

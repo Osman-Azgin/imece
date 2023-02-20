@@ -18,6 +18,8 @@
     "Decision Document": "Karar Belgesi",
     "Select Decision Document PDF/Image": "Karar Belgesi PDF/Resim Seç",
     "What you can do?": "Yapabilecekleriniz",
+    "What it can do?": "Yapabilecekleri",
+    "Number of users": "Kullanıcı sayısı",
     "Aid collection/distribution": "Yardım Toplama/Dağıtım",
     "Logistics": "Lojistik",
     "Already registered?": "Zaten kayıtlı mısınız?",
@@ -25,5 +27,65 @@
     "Remember me": "Beni hatırla",
     "Log in": "Giriş yap",
     "Forgot your password?": "Şifremi unuttum",
-    "Email": "E-posta"
+    "Email": "E-posta",
+
+    "Your organization not verified yet!": "Kuruluşunuz henüz onaylanmadı!",
+    "Your admin will upload your organization\\'s documents and we will inspect this and activate your system.": "Yöneticiniz kuruluşunuza ait belgeleri yükledikten ve onaylandıktan sona sisteminiz açılacaktır.",
+    "You must upload your organization's documents/papers and click \"verify\" to send documents to our team for verification.": "Kuruluşunaza ait belgeleri yükledikten sonra \"Doğrula\" butonuna basınız.Onaylandıktan sonra sisteminiz açılacaktır.(Doğrulama yapılırken yeni dosya ekleyebilirsiniz)",
+    "Select file": "Dosya seç",
+    "Plesase select file!": "Lütfen dosya seçin",
+    "Add": "Ekle",
+    "Delete Document": "Dosyayı sil",
+    "Are you sure to delete this document?": "Belgeyi silmek istediğinize emin misiniz?",
+    "Cancel": "Vazgeç",
+    "The document file field must be a file of type: jpeg, png, pdf.": "Dosyalar şu formatlarda olabilir: jpeg, png, pdf.",
+    "Maximum 10 files accepted!": "En fazla 10 adet dosya yüklenebilir!",
+    "Submit to verification": "Doğrulamaya gönder",
+    "Submited to verification": "Doğrulamaya Gönderildi",
+    "No files Uploaded": "Hiç dosya yüklenmedi",
+
+    "Team Settings": "Kuruluş Ayarları",
+    "Manage Team": "Kuruluşu Yönet",
+    "Switch Teams" : "Kuruluşu Değiştir",
+
+    "(Admin) Teams": "(Admin) Kuruluşarı yönet",
+    "Manage All Teams": "Tüm kuruşulşarı yönet",
+
+    "Created at": "Oluşturulma zamanı",
+
+    "Documents": "Belgeler",
+    "Verify": "onayla",
+    "UnVerify": "Onayı kaldır",
+    "Delete": "Sil",
+    "Verified": "Onaylı",
+
+
+    "Waiting for verification": "Onay bekliyor",
+    "Has not documents yet": "Henüz dosya yok",
+    "Verify Organization": "Kuruluşu Onayla",
+    "Are you sure to verify this organization?": "Kuruluşu onaylamak istediğinizden emin misiniz?",
+    "UnVerify Organization": "Kuruluşun Onayını Kaldır",
+    "Are you sure to unverify this organization?": "Kuruluşun onayını kaldırmak istediğinizden emin misiniz?",
+    "Delete Organization": "Kuruluşu Sil",
+    "Are you sure to delete this organization?": "Kuruluşu silmek istediğinizden emin misiniz?",
+
+    "Manage Account": "Hesabı Yönet",
+    "Profile": "Profil",
+    "Log Out": "Çıkış Yap",
+
+    "Requirements": "İhtiyaçlar",
+
+    "Organization's requirements": "Kuruluşunuzun ihtiyaçları",
+
+    "Warehouses": "Depolar",
+
+    "Manage warehouses": "Depoları yönet",
+
+    "Your organization's warehouses": "Kurumunuzun depoları",
+
+    "New Warehouse": "Yeni Depo",
+
+    "No warehouses here": "Depolar ekli değil",
+
+    "Dashboard": "Anasayfa"
 }

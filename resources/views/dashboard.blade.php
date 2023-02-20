@@ -11,7 +11,7 @@
                 @if(!Auth::User()->currentTeam->verified)
                     <livewire:team-not-verified-page />
                 @else
-                    <x-welcome />
+                    <livewire:imece-area />
                 @endif
             </div>
         </div>

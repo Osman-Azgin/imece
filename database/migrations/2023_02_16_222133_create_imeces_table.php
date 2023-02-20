@@ -13,12 +13,9 @@ return new class extends Migration
     {
         Schema::create('imeces', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('team_id');
-            $table->foreign('team_id')->references('id')->on('teams');
-            $table->unsignedBigInteger('requirement_id');
-            $table->foreign('requirement_id')->references('id')->on('requirements');
-            $table->unsignedBigInteger('warehouse_id')->nullable();
-            $table->foreign('warehouse_id')->references('id')->on('warehouses');
+            $table->foreignId('team_id')->index();
+            $table->foreignId('requirement_id')->index();
+            $table->foreignId('warehouse_id')->index()->nullable();
             $table->date('deadline');
             $table->timestamps();
         });

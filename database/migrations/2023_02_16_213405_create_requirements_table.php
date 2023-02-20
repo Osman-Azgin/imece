@@ -13,10 +13,8 @@ return new class extends Migration
     {
         Schema::create('requirements', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('warehouse_id');
-            $table->unsignedBigInteger('in-kind_donation_id');
-            $table->foreign('warehouse_id')->references('id')->on('warehouses');
-            $table->foreign('in-kind_donation_id')->references('id')->on('in-kind_donations');
+            $table->foreignId('warehouse_id')->index();
+            $table->foreignId('in_kind_donation_id')->index();
             $table->timestamps();
         });
     }

@@ -16,6 +16,33 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+
+                @if(\Illuminate\Support\Facades\Auth::user()->currentTeam->verified)
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <x-nav-link href="{{ route('myrequirements') }}" :active="request()->routeIs('myrequirements')">
+                            {{ __('Requirements') }}
+                        </x-nav-link>
+                    </div>
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <x-nav-link href="{{ route('imeces') }}" :active="request()->routeIs('imeces')">
+                            {{ __('İmeces') }}
+                        </x-nav-link>
+                    </div>
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <x-nav-link href="{{ route('warehouses') }}" :active="request()->routeIs('warehouses')">
+                            {{ __('Warehouses') }}
+                        </x-nav-link>
+                    </div>
+                @endif
+
+                @if(\Illuminate\Support\Facades\Auth::user()->currentTeam->is_admin)
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <x-nav-link href="{{ route('admin-teams') }}" :active="request()->routeIs('admin-teams')">
+                            {{ __('(Admin) Teams') }}
+                        </x-nav-link>
+                    </div>
+                @endif
+
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
@@ -141,6 +168,27 @@
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
         </div>
+
+        @if(\Illuminate\Support\Facades\Auth::user()->currentTeam->verified)
+            <div class="pt-2 pb-3 space-y-1">
+                <x-responsive-nav-link href="{{ route('myrequirements') }}" :active="request()->routeIs('myrequirements')">
+                    {{ __('Requirements') }}
+                </x-responsive-nav-link>
+            </div>
+            <div class="pt-2 pb-3 space-y-1">
+                <x-responsive-nav-link href="{{ route('warehouses') }}" :active="request()->routeIs('warehouses')">
+                    {{ __('Warehouses') }}
+                </x-responsive-nav-link>
+            </div>
+        @endif
+
+        @if(\Illuminate\Support\Facades\Auth::user()->currentTeam->is_admin)
+            <div class="pt-2 pb-3 space-y-1">
+                <x-responsive-nav-link href="{{ route('admin-teams') }}" :active="request()->routeIs('admin-teams')">
+                    {{ __('(Admin) Teams') }}
+                </x-responsive-nav-link>
+            </div>
+        @endif
 
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200">

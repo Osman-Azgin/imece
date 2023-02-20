@@ -20,7 +20,7 @@ class AddTeamMember implements AddsTeamMembers
      */
     public function add(User $user, Team $team, string $email, string $role = null): void
     {
-        Gate::forUser($user)->authorize('addTeamMember', $team);
+        /*Gate::forUser($user)->authorize('addTeamMember', $team);
 
         $this->validate($team, $email, $role);
 
@@ -32,7 +32,7 @@ class AddTeamMember implements AddsTeamMembers
             $newTeamMember, ['role' => $role]
         );
 
-        TeamMemberAdded::dispatch($team, $newTeamMember);
+        TeamMemberAdded::dispatch($team, $newTeamMember);*/
     }
 
     /**

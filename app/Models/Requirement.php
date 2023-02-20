@@ -18,6 +18,6 @@ class Requirement extends Model
     // belongsTo inkindDonation
     public function inkindDonation()
     {
-        return $this->belongsTo(InkindDonation::class);
+        return $this->belongsTo(InKindDonation::class,"in_kind_donation_id","id");
     }
 }

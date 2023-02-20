@@ -12,26 +12,26 @@ class Address extends Model
     // hasOne country
     public function country()
     {
-        return $this->hasOne(Country::class);
+        return $this->belongsTo(Country::class);
     }
 
 
     // hasOne city
     public function city()
     {
-        return $this->hasOne(City::class);
+        return $this->belongsTo(City::class);
     }
 
     // hasOne district
     public function district()
     {
-        return $this->hasOne(District::class);
+        return $this->belongsTo(District::class);
     }
 
 // hasOne neighborhood
     public function neighborhood()
     {
-        return $this->hasOne(Neighborhood::class);
+        return $this->belongsTo(Neighborhood::class);
     }
 
     // hasOne village
@@ -44,7 +44,7 @@ class Address extends Model
     // hasOne street
     public function street()
     {
-        return $this->hasOne(Street::class);
+        return $this->belongsTo(Street::class);
     }
 
 
