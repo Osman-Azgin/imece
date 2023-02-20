@@ -14,7 +14,7 @@
             <div class="grid md:grid-cols-8 gap-4 grid-cols-1">
                 <div class="col-span-6">
                     <p class="mt-6 text-gray-500 leading-relaxed">
-                        {{ __('You must upload your organization\'s documents/papers and click "verify" to send documents to our team for verification.') }}
+                        {{ __('You must upload your organization\'s documents/papers and click \'verify\' to send documents to our team for verification.') }}
                     </p>
                 </div>
                 <div class="col-span-2 text-right">

@@ -10,8 +10,8 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg ">
                 <div class="p-4 lg:p-6 bg-white border-b border-gray-200 grid grid-cols-2">
                     <div class="col-span-1 flex items-center">
-                        <button type="submit" wire:click="back" class="mr-4">
-                            <svg style="width: 30px;color: clack;" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        <button class="p-2 rounded-full hover:bg-gray-100" wire:click="back" class="mr-4">
+                            <svg style="width: 26px;height:26px;color: black;" xmlns="http://www.w3.org/2000/svg" fill="none"
                                  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                       d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"/>
@@ -36,8 +36,8 @@
                                     <span class="error text-white">{{ $message }}</span>
                                 </div>
                                 <div class="col-span-1 flex items-center justify-end pr-3 text-right">
-                                    <button type="submit" wire:click="removeFormError">
-                                        <svg style="width: 30px;color: white;" xmlns="http://www.w3.org/2000/svg"
+                                    <button class="p-2 rounded-full hover:bg-gray-100" wire:click="removeFormError">
+                                        <svg style="width: 26px;height:26px;color: white;" xmlns="http://www.w3.org/2000/svg"
                                              fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                              class="w-6 h-6">
                                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -56,8 +56,8 @@
                                     <span class="error text-white">{{ session('success') }}</span>
                                 </div>
                                 <div class="col-span-1 flex items-center justify-end pr-3 text-right">
-                                    <button type="submit" wire:click="">
-                                        <svg style="width: 30px;color: white;" xmlns="http://www.w3.org/2000/svg"
+                                    <button class="p-2 rounded-full hover:bg-gray-100" wire:click="">
+                                        <svg style="width: 26px;height:26px;color: white;" xmlns="http://www.w3.org/2000/svg"
                                              fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                              class="w-6 h-6">
                                             <path stroke-linecap="round" stroke-linejoin="round"

@@ -25,8 +25,8 @@
                                         <span class="error text-white">{{ session('success') }}</span>
                                     </div>
                                     <div class="col-span-1 flex items-center justify-end pr-3 text-right">
-                                        <button type="submit" wire:click="">
-                                            <svg style="width: 30px;color: white;" xmlns="http://www.w3.org/2000/svg"
+                                        <button class="p-2 rounded-full hover:bg-gray-100" wire:click="">
+                                            <svg style="width: 26px;height:26px;color: white;" xmlns="http://www.w3.org/2000/svg"
                                                  fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                                  stroke="currentColor"
                                                  class="w-6 h-6">
@@ -47,7 +47,7 @@
 
                         @foreach($currentRequirements as $requirement)
                             <div class="w-full flex items-center justify-center">
-                                <div class="md:w-3/4 w-full bg-white p-4 md:p-8 rounded-lg drop-shadow-2xl grid grid-cols-5 gap-2 mt-4">
+                                <div class="md:w-3/4 w-full bg-white p-4 md:p-6 rounded-lg drop-shadow-2xl grid grid-cols-5 gap-2 mt-4">
                                     <div class="col-span-2 flex items-center pl-1">
                                         <svg style="width: 30px;color:purple;margin-right: 15px;"
                                              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -68,8 +68,8 @@
                                         {{ \App\Models\Warehouse::where("id",$requirement->warehouse_id)->first()->name }}
                                     </div>
                                     <div class="col-span-1 flex items-center justify-end">
-                                        <button type="button" wire:click="edit({{ $requirement->id }})">
-                                            <svg style="width: 50px;color: purple;" xmlns="http://www.w3.org/2000/svg"
+                                        <button class="p-2 rounded-full hover:bg-gray-100" wire:click="edit({{ $requirement->id }})">
+                                            <svg style="width: 26px;height:26px;color: purple;" xmlns="http://www.w3.org/2000/svg"
                                                  fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                                  stroke="currentColor" class="w-6 h-6">
                                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -89,7 +89,7 @@
 
                         @foreach($oldRequirements as $requirement)
                             <div class="w-full flex items-center justify-center">
-                                <div class="md:w-3/4 w-full bg-white p-4 md:p-8 rounded-lg drop-shadow-2xl grid grid-cols-5 gap-2 mt-4">
+                                <div class="md:w-3/4 w-full bg-white p-4 md:p-6 rounded-lg drop-shadow-2xl grid grid-cols-5 gap-2 mt-4">
                                     <div class="col-span-2 flex items-center pl-1">
                                         <svg style="width: 30px;color:purple;margin-right: 15px;"
                                              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -110,8 +110,8 @@
                                         {{ \App\Models\Warehouse::where("id",$requirement->warehouse_id)->first()->name }}
                                     </div>
                                     <div class="col-span-1 flex items-center justify-end">
-                                        <button type="button" wire:click="edit({{ $requirement->id }})">
-                                            <svg style="width: 50px;color: purple;" xmlns="http://www.w3.org/2000/svg"
+                                        <button class="p-2 rounded-full hover:bg-gray-100" wire:click="edit({{ $requirement->id }})">
+                                            <svg style="width: 26px;height:26px;color: purple;" xmlns="http://www.w3.org/2000/svg"
                                                  fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                                  stroke="currentColor" class="w-6 h-6">
                                                 <path stroke-linecap="round" stroke-linejoin="round"

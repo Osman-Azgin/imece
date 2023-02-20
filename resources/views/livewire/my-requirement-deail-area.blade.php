@@ -8,8 +8,8 @@
                 <span class="error text-white">{{ $message }}</span>
             </div>
             <div class="col-span-1 flex items-center justify-end pr-3 text-right">
-                <button type="submit" wire:click="removeFormError">
-                    <svg style="width: 30px;color: white;" xmlns="http://www.w3.org/2000/svg"
+                <button class="p-2 rounded-full hover:bg-gray-100" wire:click="removeFormError">
+                    <svg style="width: 26px;height:26px;color: white;" xmlns="http://www.w3.org/2000/svg"
                          fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                          class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -28,8 +28,8 @@
                     <span class="error text-white">{{ session('success') }}</span>
                 </div>
                 <div class="col-span-1 flex items-center justify-end pr-3 text-right">
-                    <button type="submit" wire:click="">
-                        <svg style="width: 30px;color: white;" xmlns="http://www.w3.org/2000/svg"
+                    <button tclass="p-2 rounded-full hover:bg-gray-100" wire:click="">
+                        <svg style="width: 26px;height:26px;color: purple;" xmlns="http://www.w3.org/2000/svg"
                              fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                              class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"

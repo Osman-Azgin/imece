@@ -8,7 +8,10 @@ use App\Http\Livewire\RequirementDetailPage;
 use App\Http\Livewire\RequirementsPage;
 use App\Http\Livewire\WarehouseEditPage;
 use App\Http\Livewire\WarehousesPage;
+use App\Models\Requirement;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use Maatwebsite\Excel\Facades\Excel;
 
@@ -24,7 +27,12 @@ use Maatwebsite\Excel\Facades\Excel;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $currentRequirements=Requirement::join("warehouses","warehouses.id","=","requirements.warehouse_id")
+        ->leftJoin("imeces","imeces.requirement_id","=","requirements.id")->groupBy("requirements.id")->groupBy("requirements.warehouse_id")->groupBy("requirements.in_kind_donation_id")
+        ->groupBy("requirements.created_at")->groupBy("requirements.updated_at")
+        ->having(DB::raw("COUNT(imeces.id)"),"<",1)->select(DB::raw("requirements.*,COUNT(imeces.id) AS imeceCount"))
+        ->orderBy("requirements.id","desc")->get();
+    return view('welcome',["currentRequirements"=>$currentRequirements]);
 });
 
 Route::middleware([
