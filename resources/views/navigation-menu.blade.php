@@ -170,6 +170,11 @@
                 </x-responsive-nav-link>
             </div>
             <div class="pt-2 pb-3 space-y-1">
+                <x-responsive-nav-link href="{{ route('imeces') }}" :active="request()->routeIs('imeces')">
+                    {{ __('İmeces') }}
+                </x-responsive-nav-link>
+            </div>
+            <div class="pt-2 pb-3 space-y-1">
                 <x-responsive-nav-link href="{{ route('warehouses') }}" :active="request()->routeIs('warehouses')">
                     {{ __('Warehouses') }}
                 </x-responsive-nav-link>
