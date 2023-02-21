@@ -13,8 +13,8 @@
 
     <div wire:poll.5s="loadRequirements" class="bg-gray-200 bg-opacity-25 p-4 md:p-8">
         @foreach($currentRequirements as $requirement)
-            <div class="w-full p-3 md:p-6 grid grid-cols-4 md:grid-cols-5 bg-white rounded-lg items-center justify-center pl-1">
-                <div class="flex items-center">
+            <div class="w-full p-3 md:p-6 grid grid-cols-4 md:grid-cols-5 gap-4 md:gap-2 bg-white rounded-lg items-center justify-center pl-1">
+                <div class="flex items-start justify-start h-full col-span-2">
                     <svg style="width: 40px;height:40px;color:purple;margin-right: 15px;"
                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                          stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -23,18 +23,22 @@
                     </svg>
                     {{ $requirement->inkindDonation->name }}
                 </div>
-                <div>
-                    {{ $requirement->warehouse->team->name }}
+                <div class="flex items-start justify-start h-full col-span-2 md:col-span-1">
+                    <svg style="width: 30px;height:30px;color:purple;margin-right: 15px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                    <div>
+                        {{ $requirement->warehouse->team->name }}<br>
+                        {{ $requirement->warehouse->name }} Deposu
+                    </div>
                 </div>
-                <div class="">
-                    {{ $requirement->warehouse->name }}
-                </div>
-                <div>
-                    {{ $requirement->warehouse->address->district->name }}
-                    /{{ $requirement->warehouse->address->city->name }}
-                </div>
-                <div class="col-span-1 flex items-center justify-end text-right">
-                    <button class="p-2 rounded-full hover:bg-gray-100" type="button" wire:click="detail({{ $requirement->id }})">
+                <div class="flex justify-between md:justify-end h-full col-span-4 md:col-span-2">
+                    <div>
+                        {{ $requirement->warehouse->address->street->name }}<br>
+                        {{ $requirement->warehouse->address->district->name }}
+                        /{{ $requirement->warehouse->address->city->name }}
+                    </div>
+                    <button class="p-2 ml-4 rounded-full hover:bg-gray-100" type="button" wire:click="detail({{ $requirement->id }})">
                         <svg style="width: 30px;height:30px;color: purple;" xmlns="http://www.w3.org/2000/svg" fill="none"
                              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"

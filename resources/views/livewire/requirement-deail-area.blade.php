@@ -43,37 +43,51 @@
     @endif
 
     <div class="grid grid-cols-1 md:grid-cols-2">
-        <div>
-            <div class="">
-                <x-label>{{ __('Organization') }}</x-label>
-                {{ $requirement->warehouse->team->name }}
-            </div>
+        <div class="p-0">
+            <table class="table-auto w-full">
+                <tbody>
+                <tr class="border-b">
+                    <td class="text-sm text-gray-900 px-6 py-4 text-left">
+                        <x-label>{{ __('Organization') }}</x-label>
+                        {{ $requirement->warehouse->team->name }}
+                    </td>
+                </tr>
 
-            <div class="mt-4">
-                <x-label>{{ __('Organization\'s warehouse name') }}</x-label>
-                {{ $requirement->warehouse->name }}
-            </div>
+                <tr class="border-b">
+                    <td class="text-sm text-gray-900 px-6 py-4 text-left">
+                        <x-label>{{ __('Organization\'s warehouse name') }}</x-label>
+                        {{ $requirement->warehouse->name }}
+                    </td>
+                </tr>
 
-            <div class="mt-4">
-                <x-label>{{ __('In-Kind donation type') }}</x-label>
-                {{ $requirement->inkindDonation->name }}
-            </div>
+                <tr class="border-b">
+                    <td class="text-sm text-gray-900 px-6 py-4 text-left">
+                        <x-label>{{ __('In-Kind donation type') }}</x-label>
+                        {{ $requirement->inkindDonation->name }}
+                    </td>
+                </tr>
 
-            <div class="mt-4">
-                <x-label>{{ __('Organization\'s warehouse address') }}</x-label>
-                {{ $requirement->warehouse->address->neighborhood->name }} {{ $requirement->warehouse->address->district->name }}
-                /{{ $requirement->warehouse->address->city->name }} {{ $requirement->warehouse->address->country->name }}
-            </div>
+                <tr class="border-b">
+                    <td class="text-sm text-gray-900 px-6 py-4 text-left">
+                        <x-label>{{ __('Organization\'s warehouse address') }}</x-label>
+                        {{ $requirement->warehouse->address->neighborhood->name }} {{ $requirement->warehouse->address->district->name }}
+                        /{{ $requirement->warehouse->address->city->name }} {{ $requirement->warehouse->address->country->name }}
+                    </td>
+                </tr>
 
-            <div class="mt-4">
-                <x-label>{{ __('Organization\'s officer') }}</x-label>
-                {{ $requirement->warehouse->team->owner->name }}<br/>
-                {{ $requirement->warehouse->team->owner->email }}<br/>
-                {{ $requirement->warehouse->team->owner->phone }}
-            </div>
+                <tr class="border-b">
+                    <td class="text-sm text-gray-900 px-6 py-4 text-left">
+                        <x-label>{{ __('Organization\'s officer') }}</x-label>
+                        {{ $requirement->warehouse->team->owner->name }}<br/>
+                        {{ $requirement->warehouse->team->owner->email }}<br/>
+                        {{ $requirement->warehouse->team->owner->phone }}
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
         <div>
-            <div wire:ignore id="mapContainer" class="w-full" style="height: 50vh"></div>
+            <div wire:ignore id="mapContainer" class="w-full border-b h-full" style="min-height: 50vh"></div>
         </div>
     </div>
 
@@ -86,7 +100,7 @@
                 };
                 var map = new google.maps.Map(document.getElementById("mapContainer"), mapProp);
 
-                placeMarkerAndPanTo(new google.maps.LatLng({{ $requirement->warehouse->latitude }},{{ $requirement->warehouse->longitude }}), map);
+                placeMarkerAndPanTo(new google.maps.LatLng({{ $requirement->warehouse->latitude }}, {{ $requirement->warehouse->longitude }}), map);
             }
 
             var marker = null;
@@ -99,7 +113,8 @@
                 });
                 map.panTo(latLng);
             }
-            window.onload=setTimeout(myMap,200);
+
+            window.onload = setTimeout(myMap, 200);
         </script>
     @endif
 </div>

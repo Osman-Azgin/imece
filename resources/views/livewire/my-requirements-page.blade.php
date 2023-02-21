@@ -8,13 +8,17 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg ">
-                <div class="p-4 lg:p-6 bg-white border-b border-gray-200 grid grid-cols-2">
-                    <h1 class="col-span-1">{{ __('Your organization\'s requirements') }}</h1>
+                <div class="p-4 pb-2 bg-white border-b border-gray-200 grid grid-cols-2">
+                    <h1 class="col-span-1 flex items-center">{{ __('Your organization\'s requirements') }}</h1>
                     <div class="col-span-1 text-right">
                         <x-button wire:click="addRequirement"> {{ __('Add Requirement') }} </x-button>
                     </div>
+                    <div class="col-span-2 mt-4">
+                        <h1 class="font-medium">{{ __('Current Requirements') }}</h1>
+                    </div>
                 </div>
-                <div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 gap-6 lg:gap-8 p-6 lg:p-8">
+
+                <div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 gap-6 lg:gap-8 p-6">
                     <div class="min-h-full col-span-1">
 
                         @if (session()->has('success'))
@@ -39,7 +43,7 @@
                             </div>
                         @endif
 
-                        <h1 class="font-medium">{{ __('Current Requirements') }}</h1>
+
 
                         @if(count($currentRequirements)==0)
                             <h1 class="font-medium text-center">{{ __('No current requirements here') }}</h1>
@@ -81,7 +85,16 @@
                             </div>
                         @endforeach
 
-                        <h1 class="font-medium mt-5">{{ __('Old Rquirements') }}</h1>
+                    </div>
+                </div>
+                <div class="p-4 bg-white border-b border-t border-gray-200 ">
+                    <div class="">
+                        <h1 class="font-medium">{{ __('Old Rquirements') }}</h1>
+                    </div>
+                </div>
+
+                <div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 gap-6 lg:gap-8 p-6 lg:p-8">
+                    <div class="min-h-full col-span-1">
 
                         @if(count($oldRequirements)==0)
                             <h1 class="font-medium text-center">{{ __('No old requirements here') }}</h1>
