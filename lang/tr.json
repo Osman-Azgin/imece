@@ -103,8 +103,8 @@
     "Your organization's requirements": "Kuruluşunuzun gereksinimleri",
     "Add Requirement": "Gereksinim Ekle",
     "No current requirements here": "Burada mevcut gereksinim yok",
-    "Old Rquirements": "Eski Gereksinimler",
-    "No old requirements here": "Burada eski gereksinimler yok",
+    "Old Rquirements": "karşılanmış Gereksinimler",
+    "No old requirements here": "Burada karşılanmış gereksinimler yok",
     "Organization": "Kuruluş",
     "Organization's warehouse name": "Kuruluşunuzun depo adı",
     "In-Kind donation type": "Mal bağışı türü",
@@ -195,5 +195,31 @@
     "The team's name and owner information.": "Takımın adı ve sahibi bilgileri.",
     "Requirements": "Gereksinimler",
     "Create New Team": "Yeni Takım Oluştur",
-    "imeces": "imeceler"
+    "imeces": "imeceler",
+    "Imeces": "imeceler",
+    "Current Requirements": "Mevcut Gereksinimler",
+    "Admin": "Yönetici",
+    "Please select warehouse": "Lütfen depo seçin",
+    "Please select in-kind donation": "Lütfen bağış seçin",
+    "You can not dublicate!": "Aynı gereksinim ile ihtiyaç oluşturdunuz!",
+    "The requirement has been saved!": "Gereksinim kaydedildi!",
+    "Please select warehouse!": "Lütfen depo seçin!",
+    "Please select deadline!": "Lütfen teslim tarihini seçin!",
+    "Already satisfied!": "Zaten karşılanmış!",
+    "The requirement has been satisfied!": "Gereksinim karşılandı!",
+    "The requirement has been deleted!": "Gereksinim silindi!",
+    "Plesase set name!": "Lütfen adı girin!",
+    "Plesase select country!": "Lütfen ülke seçin!",
+    "Plesase select city!": "Lütfen şehir seçin!",
+    "Plesase select district!": "Lütfen belde seçin!",
+    "Plesase select neighborhood!": "Lütfen ilçe seçin!",
+
+
+
+
+
+
+
+
+
 }
