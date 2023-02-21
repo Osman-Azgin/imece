@@ -24,5 +24,5 @@ Hiç bir şekilde kâr amacı gütmüyoruz. Nitelikli gönüllülük esasıyla �
 Uygulamayı istediğiniz gibi kullanabilirsiniz, değiştirebilirsiniz, kopyalayabilirsiniz. Amaç, STK'ların yardımlaşmasını sağlamaktır. Uygulamayı kendi sunucunuza kurmak isterseniz indirebilirsiniz. Herhangi bir aksalık durumunda bizimle iletişime geçebilirsiniz. (destek@imece.io)
 
 ### Partnerlerimiz
- -Herhangi bir kurum ve kuruluş ile bağlantımız bulunmamaktadır. Bu uygulamayı geliştiren ve sunan gönüllülerden oluşmaktadır.
+ Herhangi bir kurum ve kuruluş ile bağlantımız bulunmamaktadır. Bu uygulamayı geliştiren ve sunan gönüllülerden oluşmaktadır.
 
