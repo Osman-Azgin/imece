@@ -1,4 +1,4 @@
-<div wire:submit.prevent="save" class=" w-full md:w-3/4">
+<div wire:submit.prevent="save" class=" w-full md:w-3/4 p-6">
 
     @error('form')
     <div class="w-full flex items-center justify-center">
