@@ -13,7 +13,7 @@
 
     <div wire:poll.5s="loadRequirements" class="bg-gray-200 bg-opacity-25 p-4 md:p-8">
         @foreach($currentRequirements as $requirement)
-            <div class="w-full p-3 md:p-6 grid grid-cols-4 md:grid-cols-5 gap-4 md:gap-2 bg-white rounded-lg items-center justify-center pl-1">
+            <div class="w-full p-3 md:p-6 grid grid-cols-4 md:grid-cols-5 gap-4 md:gap-2 bg-white rounded-lg items-center justify-center pl-1 mb-6">
                 <div class="flex items-start justify-start h-full col-span-2">
                     <svg style="width: 40px;height:40px;color:purple;margin-right: 15px;"
                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
