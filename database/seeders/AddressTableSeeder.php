@@ -36,7 +36,7 @@ class AddressTableSeeder extends Seeder
                 }
 
                 //if row[0] exists in database get id else create new record and get id
-                $city = City::firstOrCreate(['name' => $row[0], 'country_id' => $country->id]);
+                $city = City::firstOrCreate(['name' => $row[0], 'country_id' => $country->idç]);
                 $city_id = $city->id;
                 //if row[1] exists in database get id else create new record and get id
                 $district = District::firstOrCreate(['name' => $row[1], 'city_id' => $city_id]);
