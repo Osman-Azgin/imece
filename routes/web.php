@@ -46,6 +46,7 @@ Route::middleware([
 
     Route::get("/admin/teams",AdminTeamsPage::class)
         ->name("admin-teams")->middleware("isAdmin");
+
     Route::get("/admin/team/{team_id}",AdminTeamEditPage::class)
         ->middleware("isAdmin");
 
