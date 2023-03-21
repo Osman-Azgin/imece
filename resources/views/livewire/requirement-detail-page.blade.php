@@ -157,12 +157,10 @@
                 </div>
                 @enderror
                 {{ __("Please specify which warehouse will use for requirement satisfy") }}
-                <select wire:model="warehouse_id" class="block mt-1 w-full" type="text" name="warehouse_id"
-                        :value="old('warehouse_id')">
+                <select wire:model="warehouse_id" class="block mt-1 w-full" type="text" name="warehouse_id">
                     <option value="">{{ __("Select") }}</option>
                     @foreach($warehouses as $warehouse)
-                        <option @if($warehouse->id==$warehouse_id) selected
-                                @endif value="{{ $warehouse->id }}">{{ $warehouse->name }}</option>
+                        <option value="{{ $warehouse->id }}">{{ $warehouse->name }}</option>
                     @endforeach
                 </select>
                 <br/>
